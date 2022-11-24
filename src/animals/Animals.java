@@ -1,10 +1,12 @@
 package animals;
 
+import java.util.Objects;
+
 public class Animals {
     private String nameAnimals;
     private int ageAnimals;
 
-    public Animals (String nameAnimals, int ageAnimals) {
+    public Animals(String nameAnimals, int ageAnimals) {
         setNameAnimals(nameAnimals);
         if (ageAnimals > 0) {
             this.ageAnimals = ageAnimals;
@@ -21,7 +23,7 @@ public class Animals {
 
     }
 
-    public void eat () {
+    public void eat() {
 
     }
 
@@ -35,9 +37,24 @@ public class Animals {
         }
     }
 
-    public int getAge() {
+    public int getAgeAnimals() {
         return ageAnimals;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Animals animals = (Animals) o;
+        return ageAnimals == animals.ageAnimals && Objects.equals(nameAnimals, animals.nameAnimals);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(nameAnimals, ageAnimals);
+    }
+
+    public String toString() {
+        return "Кличка -" + getNameAnimals() + ", возраст: " + getAgeAnimals();
+    }
 }
