@@ -13,6 +13,18 @@ public class Animals {
         }
     }
 
+    public void go() {
+
+    }
+
+    public void sleep() {
+
+    }
+
+    public void eat () {
+
+    }
+
     public String getName() {
         return name;
     }
