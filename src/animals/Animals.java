@@ -1,15 +1,15 @@
 package animals;
 
 public class Animals {
-    private String name;
-    private int age;
+    private String nameAnimals;
+    private int ageAnimals;
 
-    public Animals (String name, int age) {
-        setName(name);
-        if (age > 0) {
-            this.age = age;
+    public Animals (String nameAnimals, int ageAnimals) {
+        setNameAnimals(nameAnimals);
+        if (ageAnimals > 0) {
+            this.ageAnimals = ageAnimals;
         } else {
-            this.age = 0;
+            this.ageAnimals = 0;
         }
     }
 
@@ -25,18 +25,18 @@ public class Animals {
 
     }
 
-    public String getName() {
-        return name;
+    public String getNameAnimals() {
+        return nameAnimals;
     }
 
-    public void setName(String name) {
-        if (name != null && !name.isBlank() && !name.isEmpty()) {
-            this.name = name;
+    public void setNameAnimals(String nameAnimals) {
+        if (nameAnimals != null && !nameAnimals.isBlank() && !nameAnimals.isEmpty()) {
+            this.nameAnimals = nameAnimals;
         }
     }
 
     public int getAge() {
-        return age;
+        return ageAnimals;
     }
 
 
