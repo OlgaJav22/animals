@@ -1,17 +1,17 @@
 package animals;
 
 public class Animals {
-    private String name;
-    private int age;
-
-    public Animals (String name, int age) {
-        setName(name);
-        if (age > 0) {
-            this.age = age;
-        } else {
-            this.age = 0;
-        }
-    }
+//    private String name;
+//    private int age;
+//
+//    public Animals (String name, int age) {
+//        setName(name);
+//        if (age > 0) {
+//            this.age = age;
+//        } else {
+//            this.age = 0;
+//        }
+//    }
 
     public void go() {
 
